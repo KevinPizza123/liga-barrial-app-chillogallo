@@ -37,8 +37,9 @@ export default function App() {
         const res = await axios.get(`${BASE_URL}/goleadores`);
         setGoleadores(res.data);
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error conectando con Flask API:', error);
+      alert('Error de conexión: ' + (error.message || 'No se pudo conectar al servidor'));
     } finally {
       setLoading(false);
     }
