@@ -15,8 +15,9 @@ import axios from 'axios';
 // ⚠️ REEMPLAZA ESTA IP CON LA DIRECCIÓN IPV4 DE TU COMPUTADORA
 //const IP_PC = '192.168.100.55'; // Ej: '192.168.100.25'
 //const BASE_URL = `http://${IP_PC}:5000/api`;
+//const BASE_URL = 'https://overcome-stylus-heroes-spell.trycloudflare.com/api';
 
-const BASE_URL = 'https://overcome-stylus-heroes-spell.trycloudflare.com/api';
+const BASE_URL = 'https://maximize-conflicts-prayers-mostly.trycloudflare.com/api';
 
 export default function App() {
   const [pestana, setPestana] = useState<'partidos' | 'tablas' | 'goleadores'>('partidos');
